@@ -1,0 +1,132 @@
+@HotelListing.Api_HostAddress = https://localhost:7124
+@json = application/json
+@apiKey=dXNlcjFAbG9jYWxob3N0LmNvbTpQQHNzrbd29yZDE=
+
+###
+@id=3
+
+GET {{HotelListing.Api_HostAddress}}/api/countries
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MjFlNzYwZi04NjM2LTQ2ZjQtOTgyNi1kOGUxNTE1ODQxNjIiLCJlbWFpbCI6ImhvdGVsYWRtaW5AbG9jYWxob3N0LmNvbSIsImp0aSI6ImEzZmQ5ZjI1LTJjMTAtNDE3Mi04ZWQ0LTc2OWNkNGUzYjczMCIsIm5hbWUiOiJBZG1pbiwgSG90ZWwiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJIb3RlbCBBZG1pbiIsImV4cCI6MTc1NzM1MjcyMywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXN0aW5nQVBJQ2xpZW50In0.KvzcCukNYyE4xfza8ZONwrK1QCiAFwFSMNsq-rrLGNU
+###
+
+POST {{HotelListing.Api_HostAddress}}/api/countries
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjIzYjQ3YS0xOWRjLTRjOWEtOGEwMC05OTk4ODFiNzQ0MWUiLCJlbWFpbCI6ImFkbWluMUBsb2NhbGhvc3QuY29tIiwianRpIjoiZDFkMDk1N2ItZTM0Zi00Y2VlLWJjODMtMWZiMzk4NDlmYzY3IiwibmFtZSI6Ikxhc3QsIEZpcnN0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTc1NjUyNTA2NSwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXN0aW5nQVBJQ2xpZW50In0.t2tATBbdWAdXPQKTR0QhOX76PZc4Narm_XIBWx8-yKU
+Content-Type: {{json}}
+
+{
+  "name": "Test Admin Country",
+  "shortName": "TAC"
+}
+
+###
+
+DELETE {{HotelListing.Api_HostAddress}}/api/countries/{{id}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjIzYjQ3YS0xOWRjLTRjOWEtOGEwMC05OTk4ODFiNzQ0MWUiLCJlbWFpbCI6ImFkbWluMUBsb2NhbGhvc3QuY29tIiwianRpIjoiZDFkMDk1N2ItZTM0Zi00Y2VlLWJjODMtMWZiMzk4NDlmYzY3IiwibmFtZSI6Ikxhc3QsIEZpcnN0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTc1NjUyNTA2NSwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXN0aW5nQVBJQ2xpZW50In0.t2tATBbdWAdXPQKTR0QhOX76PZc4Narm_XIBWx8-yKU
+###
+
+GET {{HotelListing.Api_HostAddress}}/api/countries/{{id}}
+
+###
+
+PUT {{HotelListing.Api_HostAddress}}/api/countries/{{id}}
+Content-Type: {{json}}
+{
+  "countryId": 2,
+  "name": "Jamaica",
+  "shortName": "JM"
+}
+###
+
+GET {{HotelListing.Api_HostAddress}}/api/hotels
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MjFlNzYwZi04NjM2LTQ2ZjQtOTgyNi1kOGUxNTE1ODQxNjIiLCJlbWFpbCI6ImhvdGVsYWRtaW5AbG9jYWxob3N0LmNvbSIsImp0aSI6IjhhYzNlY2ZmLTg5NGMtNDI0Yy05MzlhLTc0NTUzY2UwYTU5YSIsIm5hbWUiOiJBZG1pbiwgSG90ZWwiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJIb3RlbCBBZG1pbiIsImV4cCI6MTc1NzM1MzM2MywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXN0aW5nQVBJQ2xpZW50In0.G--TCskW6_6i_q1dqQLonPMB9RoAzWyM0OEDG7jwtmk
+###
+
+POST {{HotelListing.Api_HostAddress}}/api/hotels
+Content-Type: {{json}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4MjFlNzYwZi04NjM2LTQ2ZjQtOTgyNi1kOGUxNTE1ODQxNjIiLCJlbWFpbCI6ImhvdGVsYWRtaW5AbG9jYWxob3N0LmNvbSIsImp0aSI6ImEzZmQ5ZjI1LTJjMTAtNDE3Mi04ZWQ0LTc2OWNkNGUzYjczMCIsIm5hbWUiOiJBZG1pbiwgSG90ZWwiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJIb3RlbCBBZG1pbiIsImV4cCI6MTc1NzM1MjcyMywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXN0aW5nQVBJQ2xpZW50In0.KvzcCukNYyE4xfza8ZONwrK1QCiAFwFSMNsq-rrLGNU
+
+{
+  "Name": "Moon Palace",
+  "Address": "Ocho Rios, Jamaica",
+  "Rating": 5,
+  "CountryId": 3
+}
+
+###
+@id=3
+DELETE {{HotelListing.Api_HostAddress}}/api/hotels/{{id}}
+
+###
+
+GET {{HotelListing.Api_HostAddress}}/api/hotels/{{id}}
+
+###
+
+PUT {{HotelListing.Api_HostAddress}}/api/hotels/{{id}}
+Content-Type: {{json}}
+{
+  "Id": 3,
+  "Name": "Ocean Coral",
+  "Address": "Trelawny, Jamaica",
+  "Rating": 4.5,
+  "CountryId": 100
+}
+
+###
+POST {{HotelListing.Api_HostAddress}}/api/auth/register
+Content-Type: {{json}}
+{
+  "email": "user1@localhost.com",
+  "password": "P@ssword1",
+  "firstName":"First",
+  "lastName": "Last"
+}
+
+###
+POST {{HotelListing.Api_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin1@localhost.com",
+  "password": "P@ssword1"
+}
+
+###
+POST {{HotelListing.Api_HostAddress}}/api/defaultauth/login
+Content-Type: application/json
+
+{
+  "email": "user@localhost.com",
+  "password": "P@ssword1"
+}
+
+###
+
+POST {{HotelListing.Api_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "admin1@localhost.com",
+  "password": "P@ssword1",
+  "firstName":"First",
+  "lastName": "Last",
+  "role": "Administrator"
+}
+
+###
+
+GET {{HotelListing.Api_HostAddress}}/api/apikey
+X-Api-Key: {{apiKey}}
+
+###
+
+GET {{HotelListing.Api_HostAddress}}/api/basicauth
+Authorization: Basic dXNlcjFAbG9jYWxob3N0LmNvbTpQQHNzd29yZDE=
+
+###
+
+
+PUT {{HotelListing.Api_HostAddress}}/api/hotels/1/bookings/1/admin/cancel
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NjIzYjQ3YS0xOWRjLTRjOWEtOGEwMC05OTk4ODFiNzQ0MWUiLCJlbWFpbCI6ImFkbWluMUBsb2NhbGhvc3QuY29tIiwianRpIjoiZTQ1NzJjYjUtZjM1Zi00MTkyLTk3YTAtM2Y5MTIzYzg0ODI3IiwibmFtZSI6Ikxhc3QsIEZpcnN0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTc1NzM0ODk2NCwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXN0aW5nQVBJQ2xpZW50In0.k7fJ1cxplGHlvTou9GBct8YcfWLCXQs0qEMMsP0fR1s
+###
+
